@@ -1,0 +1,127 @@
+<html>
+<title>Donate blood!!</title>
+<head>
+<style>
+.mySlides {display:none}
+.slideshow-container {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.footer
+{ width: 100%;
+    height:250px;
+    background:#993366;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    color:white;
+    text-align:center;
+    font-size:16px;
+    font-family:verdana;
+}
+
+.active {
+  background-color: #717171;
+}
+.button
+{
+height:50px;
+width:200px;
+background-color:#8e663d;
+float:right;
+color:blue;
+font-weight:bold;
+font-family:sans serif;
+border-radius:12px;
+cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.b:hover
+{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+body
+{
+background-image:url("i.jpg");
+
+ position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div style="float:left"><center><img src="4.png" width=110px height=110px/></center></div>
+<div align="center"><p style="color:white;font-size:50px;background-color:black">Give <em style="color:red"> Blood</em> Save Life<em style="color:red">!!</em></div>
+<form>
+<div align="right">
+<a href="admin.html"><input type="button" class="button b" value="ADMIN LOGIN"></a><br><br><br><br>
+<a href="register.html"><input type="button" class="button b" value="REGISTER NOW"></a></div>
+</form>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="5.jpg" style="width:100%;height:500px">  
+</div>
+
+<div class="mySlides fade">
+  <img src="7.jpg" style="width:100%;height:500px"> 
+</div>
+<div class="mySlides fade">
+  <img src="6.jpg" style="width:100%;height:500px">
+ </div>
+<div class="mySlides fade">
+  <img src="9.jpg" style="width:100%;height:500px">
+ </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="footer">
+<p>contact us: 9088822611</p>
+</div>
+</body>
+</html> 

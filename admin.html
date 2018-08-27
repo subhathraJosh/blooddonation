@@ -1,0 +1,73 @@
+<html>
+<style>
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:15%;    
+}
+.cancelbtn {
+    width: 15%;
+    background-color: #f44336;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 30%;
+    border-radius: 25%;
+}
+
+@media screen and (max-width: 200px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+body
+{
+background-image:url("14.jpg");
+
+ position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<body>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="12.png" alt=" " class="avatar">
+  </div>
+
+  <div class="container">
+     <p style="text-align:center;color:white"><label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+   <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+    <button type="submit">Login</button></p>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+   <p style="text-align:center"><button type="button" class="cancelbtn">Cancel</button>
+    </p>
+  </div>
+</form>
+
+</body>
+</html>

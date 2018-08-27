@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.select
+{
+ width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+    border-color:red;
+}
+.signupbtn{
+border-color:green;
+}
+.cancelbtn,.signupbtn {  
+    width: 15%;
+   font-weight:bold;
+   border-style:solid;
+   border-width:10px;
+}
+.container {
+    padding: 16px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+body
+{
+background-image:url("16.jpg");
+position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+</style>
+<h1 style="text-align:center;color:#b800b8">We Heartly Welcomes you</h1>
+<body>
+
+<form style="border:1px solid #ccc">
+  <div class="container">
+   <p style="text-align:center;color:blue"><label><b>Name</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" placeholder="Enter Name" name="name" required><br>
+    <label><b>Blood Group</b></label>
+    <input type="text" placeholder="Enter Blood group" name="bg" required><br>
+  <label><b>Age</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" placeholder="Enter age" name="age" required><br>
+<label><b>Weight</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" placeholder="Enter weight" name="weight" required><br>
+
+<label><b>Gender</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <select name="gender" class="select" required><option selected>Male</option>
+                                   <option>Female</option></select><br>
+    <label><b>Address</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <textarea rows="4" cols="35"></textarea><br>
+<label><b>Mobile Number</b></label>
+    <input type="text" placeholder="Enter mobile number" name="mblno" required><br>
+    <label><b>Email</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+    
+   <label><b>Pincode</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" placeholder="Enter pincode number" name="pincode" required><br></p>
+
+      </div>
+<div class="clearfix" style="width=100%; height=100%">
+  <p style="text-align:center"><button type="submit" class="signupbtn" >Sign Up</button>
+      <button type="button" class="cancelbtn">Cancel</button></p>
+      
+    </div>
+
+</form>
+</body>
+</html>
